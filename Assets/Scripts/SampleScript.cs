@@ -1,16 +1,20 @@
+using System;
 using UnityEngine;
 
 public class SampleScrip : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Debug.LogWarning("START THIS CALLED");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        Debug.Log("Enabled");
+    }
+
+    private void OnDisable()
+    {
+        Debug.Log("Disabled");
     }
 }
